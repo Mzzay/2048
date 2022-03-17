@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="App_2048.MainWindow"
+        Title="2048 GAME"
+        WindowStartupLocation="CenterScreen"
+        Width="400"
+        Height="450">
+
+        <StackPanel HorizontalAlignment="Center" Name="GlobalStack" >
+                <TextBox IsVisible="False"></TextBox>
+                <Grid Margin="0 0 0 20">
+                        <TextBlock HorizontalAlignment="Center" FontSize="18" Margin="0 45 0 0" FontWeight="Bold">2048 Game</TextBlock>
+                        <TextBlock HorizontalAlignment="Center" FontSize="12" FontStyle="Italic" Foreground="gray" Margin="0 65 0 0">March 2022</TextBlock>
+                </Grid>
+                <Grid  VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Border BorderBrush="Black" BorderThickness="2">
+                                <Grid Name="GameGrid"></Grid>
+                        </Border>
+                </Grid>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <DockPanel Margin="0 10 10 0">
+                                <TextBlock Name="Timer" Margin="0 0  40 0">Time: 00:00</TextBlock>
+                                <TextBlock Name="Score" Margin="40 0 0 0">Score: 0</TextBlock>
+                        </DockPanel>
+                        <TextBlock Name="GameState"></TextBlock>
+                </StackPanel>
+        </StackPanel>
+</Window>
