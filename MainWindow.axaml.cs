@@ -1,7 +1,4 @@
 using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using System.Timers;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -9,8 +6,6 @@ using Avalonia.Layout;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using Avalonia.Threading;
-using Avalonia.Utilities;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace App_2048
 {
@@ -225,6 +220,7 @@ namespace App_2048
             this._boardStackPanel.Children.Clear();
             this._currentGameState = this._currentBoard.Move(this._eventKeyDirection);
             _currentBoard.Print();
+            this._currentGameState = _currentBoard.GetGameState();
             RenderTable(_currentBoard, this._boardStackPanel, converter);
         }
     }
