@@ -1,6 +1,6 @@
 # 2048 Game - March 2022
 
-Small project developped in few days to conclude the learning of 2D arrays in c\#. 
+Small project developed in few days to conclude the learning of 2D arrays in c#.
 
 ## Technologies used
 - [Microsoft .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
