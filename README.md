@@ -18,6 +18,7 @@ dotnet run
 ```
 
 * Game:
+
 When you start the project, the timer starts and you can start moving the boxes by pressing the arrows on your keyboard.
 You will see something like this in the CLI:
 ``` 
