@@ -25,7 +25,8 @@ namespace App_2048 {
 
             return string.Join("", content);
         }
-        
+       
+        // Print one line of the board 
         public void PrintLine(int i, int width, int longest_number)
         {
             string leftCorner = "╔";
@@ -62,6 +63,7 @@ namespace App_2048 {
             Console.WriteLine(string.Join("", content));
         }
         
+        // Print game board
         public void Print()
         {
             string separator = "║";
@@ -85,6 +87,8 @@ namespace App_2048 {
 
             PrintLine(this.width, this.width, count + 2);
         }
+
+        // Old version
         public void Show() {
             Console.WriteLine("--- Current Board ---");
             for (int i = 0 ; i < board.GetLength(0) ; i++) {
