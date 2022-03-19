@@ -22,7 +22,7 @@ dotnet run
 When you start the project, the timer starts and you can start moving the boxes by pressing the arrows on your keyboard.
 You will see something like this in the CLI: 
 
-⚠ Until March 22, 2022 the display in the CLI is disabled
+⚠ Until March 22, 2022 display in the CLI is disabled
 ``` 
 ╔════════╦════════╦════════╦════════╗
 ║        ║        ║        ║        ║
