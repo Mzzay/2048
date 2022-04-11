@@ -59,7 +59,7 @@ namespace App_2048
             // initialize board
             Board currentBoard = new Board() ;
             this._currentBoard = currentBoard;
-            // currentBoard.Print(); -> Temporaly removal
+            currentBoard.Print();
             
             StackPanel stackPanelCustom = new StackPanel() { Background = Brushes.Black };
             
@@ -219,7 +219,7 @@ namespace App_2048
             var converter = new BrushConverter();
             this._boardStackPanel.Children.Clear();
             this._currentGameState = this._currentBoard.Move(this._eventKeyDirection);
-            // _currentBoard.Print();
+            _currentBoard.Print();
             this._currentGameState = _currentBoard.GetGameState();
             RenderTable(_currentBoard, this._boardStackPanel, converter);
         }
